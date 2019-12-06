@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="src/main/resources/static/img/logo.jpg">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/home">Home</a></li>
+        <li><a id="cadastro" href="/ocorrenciaCadastro">Cadastrar Novo</a></li>
+    
+      </ul>
+    </div>
+  </div>
+</nav>
+<h1>Ocorrências cadastradas</h1>
+<div id ="post" align="center"></div>
+<div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action active">
+ Defeito (Manut. Corretiva)
+  </a>
+  <a href="#" class="list-group-item list-group-item-action"> #2055 ERRO AO PLOTAR VIAGEM</a>
+  <a href="#" class="list-group-item list-group-item-action">#1232 POPOUP NAO ABRE</a>
+  <a href="#" class="list-group-item list-group-item-action">#4454 CORREÇÃO UTF-8</a>
+  <a href="#" class="list-group-item list-group-item-action">#8211 CARACTERES ESPECIAIS</a>
+</div>
+<div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action active">
+ Melhoria(Manut. Evolutiva)
+  </a>
+  <a href="#" class="list-group-item list-group-item-action"> #2044 ATUALIZAR SIU MOBILE </a>
+  <a href="#" class="list-group-item list-group-item-action">#1244 CRIAR MENU TELEMETRIA</a>
+  <a href="#" class="list-group-item list-group-item-action">#4455 CRIAR RELATÓRIO DE VIAGENS</a>
+  <a href="#" class="list-group-item list-group-item-action">#8445 INOVAR REST</a>
+</div>
+</body>
+</html>

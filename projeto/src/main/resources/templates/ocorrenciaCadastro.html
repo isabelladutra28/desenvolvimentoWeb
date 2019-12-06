@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="js/getCadastro.js"></script>
+   <script src="js/postOcorrencia.js"></script>
+  <title>Cadastro Ocorrencia</title>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/home">Home</a></li>
+        <li><a id="listaOcorrencias" href="listaocorrencias">Ocorrencias</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>SAIR</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<h1>Cadastre uma nova Ocorrencia</h1>
+<div id ="post" align="center"></div>
+<div class ="container">
+<form id ="cadastroocorrencia">
+  <div class="form-group">
+    <label>Titulo</label>
+    <input type="text" class="form-control" id="titulo" placeholder="titulo">
+  </div>
+  <div class="form-group">
+    <label>Data</label>
+    <input type="date" class="form-control" id="data" >
+  </div>
+  <div class="form-group">
+    <label>Descricao</label>
+    <textarea class="form-control" id="descricao" rows="3"></textarea>
+  </div>
+<div class="form-group">
+    <label>STATUS</label>
+    <select class="form-control" id="status">
+      <option>NOVA</option>
+      <option>EM ANDAMENTO</option>
+      <option>CANCELADA</option>
+      <option>CONCLUIDA</option>
+    </select>
+  </div>
+  <div>
+  <button type="submit" class="btn btn-success">SALVAR</button>
+  </div> 
+</form>
+</div>
+</body>
+</html>
